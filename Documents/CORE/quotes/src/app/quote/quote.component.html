@@ -5,3 +5,17 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div *ngFor='let quote of quotes; let i=index'>
+
+                <h4>{{quote.name}}</h4>
+
+                 <button (click)='toggleDetails(i)'>Toggle Details</button>
+
+                 <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
+            </div>
+        </div>
+    </div>
+</div>
