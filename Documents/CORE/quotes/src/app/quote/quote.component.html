@@ -10,10 +10,9 @@
         <div class="col-md-6">
             <div *ngFor='let quote of quotes; let i=index'>
                 <h1 appHighlight>{{quote.name}}</h1>
-                 <button (click)='toggleDetails(i)'>MORE</button>
-
+                 <button (click)='toggleDetails(i)' class="btn btn-success">MORE</button>
                  <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'
-                   (isComplete)= 'completequote($event,i)'> </app-quote-detail>
+                   (isComplete) = 'deleteQuote($event,i)'> </app-quote-detail>
             </div>
         </div>
     </div>
