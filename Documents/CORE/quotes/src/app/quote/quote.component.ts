@@ -12,7 +12,10 @@ export class QuoteComponent implements OnInit {
     new Quote(1, 'It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.', 
     'J.K Rowlings', 'Mrs. Bati', new Date(2020,8,23),0,0),
     new Quote(2,'You may encounter many defeats, but you must not be defeated.In fact, it may be necessary to encounter the defeats, so you can know who you are, what you can rise from, how you can still come out of it.',
-    'Maya Angelou', 'Chebet Edda', new Date(2020,8,20),0,0), 
+    'Maya Angelou', 'Chebet Edda', new Date(2020,8,20),0,0),
+    new Quote(3, 'Some of us think holding on makes us strong; but sometimes it is letting go', 'Herman Hesse', 'Mrs. Rotich', new Date(2020,8,24),0,0),
+    new Quote(4, 'Life is never fair, and perhaps it is a good thing for most of us that it is not.', 'Osca Wilde', 'Adrian kip', new Date(2020,7,1),0,0),
+    new Quote(5, 'I want to taste and glory in each day, and never be afraid to experience pain.', 'Sylvia Plath', 'Kinsey langat',new Date(2020,7,2),0,0)     
     
   ];
   addNewQuote(quote) {
