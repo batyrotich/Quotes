@@ -1,23 +1,27 @@
 <div class="container-fluid">
-    <div class="jumbotron">
+    <div class="main">
         <div class="header">
-            <h1>Welcome To Quotes Favorite World.</h1>
+             <div class="jumbotron">
+                 <h1>Welcome To Quotes Favorite World.</h1>
+             </div>
         </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div *ngFor='let quote of quotes; let i=index'>
-            <div class="display">
-              <h3 appHighlight>{{quote.name}}</h3>
-              <button (click)='toggleDetails(i)' class="btn btn-success">MORE</button>
-              <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
-              </app-quote-detail>
-            </div>
+        <!--column-->
+        <div class="row">
+            <div class="col-md-6">
+                <div *ngFor='let quote of quotes; let i=index'>
+                  <div class="display">
+                    <h4 id={{i}} appHighlight>{{quote.name}}</h4>
+                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'
+                      (isComplete)='deleteQuote($event,i)'>
+                    </app-quote-detail>
+                    <button (click)='toggleDetails(i)' class="btn btn-primary">MORE </button>
+                  </div>
+                </div>
+                </div>
+                  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
-          </div>
         </div>
-      </div>
+    
     </div>
-
 </div>
+

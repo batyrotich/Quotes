@@ -1,6 +1,11 @@
 .container-fluid{
     background-color: cyan;
 }
+.main {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
 .jumbotron{
     background-color: blueviolet;
       padding-top: 5%;

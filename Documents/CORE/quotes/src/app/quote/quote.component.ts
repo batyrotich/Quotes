@@ -15,6 +15,19 @@ export class QuoteComponent implements OnInit {
     'Maya Angelou', 'Chebet Edda', new Date(2020,8,20)), 
     
   ];
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.postingDate = new Date()
+
+    if (quote.author === '' || quote.author === '' || quote.blogger === '') {
+      alert('all fields are required!')
+    } else {
+      alert('Your Quote has been added Successfully')
+      this.quotes.push(quote);
+
+    }
+  }
   toggleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription; 
   }
