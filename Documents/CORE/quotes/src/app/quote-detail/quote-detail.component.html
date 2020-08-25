@@ -3,10 +3,10 @@
     <br>
     Blogger: {{quote.blogger}}
 </p>
-<p>This quote was posted on: {{quote.postingDate| date}}</p>
+<p>This quote was posted on: {{quote.completeDate | date}}</p>
 <div class="like">
-  <p id="like"><span (click)="countLikeclick()"><img class="logo" src="../assets/like.jpeg" /></span> {{upVote}}</p>
-  <p id="dislike"><span (click)="countDislikeclick()"><img class="logo" src="../assets/dislike.png" /></span>
+  <p id="like"><span (click)="countLikeclick()" onclick="event.preventDefault()"><img class="logo" src="../assets/like.jpeg" /></span> {{upVote}}</p>
+  <p id="dislike"><span (click)="countDislikeclick()" onclick="event.preventDefault()" ><img class="logo" src="../assets/dislike.png" /></span>
     {{downVote}}</p>
 </div>
 
