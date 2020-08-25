@@ -4,10 +4,11 @@
     Blogger: {{quote.blogger}}
 </p>
 <p>This quote was posted on: {{quote.completeDate | date}}</p>
-<div class="like">
-  <p id="like"><span (click)="countLikeclick()" onclick="event.preventDefault()"><img class="logo" src="../assets/img/like.jpeg"/></span> {{upVote}}</p>
-  <p id="dislike"><span (click)="countDislikeclick()" onclick="event.preventDefault()" ><img class="logo" src="../assets/img/dislike.png" /></span>
-    {{downVote}}</p>
-</div>
+  <div class="like">
+    <button id="like" (click)="countLikeclick()" onclick="event.preventDefault()" class="btn d-inline btn-outline-success"><i class="fa fa-thumbs-up"></i></button><span>{{upVote}}</span>
+    <button id="dislike" (click)="countDislikeclick()" onclick="event.preventDefault()" class="btn d-inline btn-outline-danger"><i class=" fa fa-thumbs-down"></i></button><span>{{downVote}}</span>
+    
+  </div>
+  <br>
 
 <button (click)='quoteDelete(true)' class="btn btn-danger">Delete</button>

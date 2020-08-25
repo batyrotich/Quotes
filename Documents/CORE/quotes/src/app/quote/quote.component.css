@@ -2,10 +2,9 @@
     background-color: skyblue;
 }
 .main {
-  background-image: url('/assets/img/back3.jpg');
+  background-image: url("../assets/img/back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 1;
 }
 .jumbotron{
     background-color:silver;
@@ -18,7 +17,7 @@ h1{
      font-style: initial;
 }
 h4{
-  color: blueviolet;
+  color:thistle;
 } 
 
 .display{
