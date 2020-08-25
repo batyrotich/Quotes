@@ -20,6 +20,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   4. View the highest voted quote
 
   ## Project Live link
+  https://batyrotich.github.io/Quotes/
 
   ## Development server
 
@@ -31,7 +32,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  phone: 0715017129
 
  ## Licensed Information
- Licensed Under[MITlicense]()
+ Licensed Under MITlicense
 
  ## MIT License
  MIT License
