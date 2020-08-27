@@ -3,7 +3,7 @@
     <br>
     Blogger: {{quote.blogger}}
 </p>
-<p>This quote was posted : {{quote.completeDate|dateCount}}</p>
+<p>This quote was posted : {{quote.completeDate|dateCount}} days ago</p>
   <div class="like">
     <button id="like" (click)="countLikeclick()" onclick="event.preventDefault()" class="btn d-inline btn-outline-success"><i class="fa fa-thumbs-up"></i></button><span>{{upVote}}</span>
     <button id="dislike" (click)="countDislikeclick()" onclick="event.preventDefault()" class="btn d-inline btn-outline-danger"><i class=" fa fa-thumbs-down"></i></button><span>{{downVote}}</span>
